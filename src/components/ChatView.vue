@@ -186,12 +186,7 @@ export default {
             input.value.substring(0, startPos) +
             event.detail.unicode +
             input.value.substring(endPos);
-          input.value = resultText;
           input.focus();
-          input.selectionStart = startPos + event.detail.unicode.length;
-          console.log(input.selectionStart);
-          input.selectionEnd = startPos + event.detail.unicode.length;
-          console.log(input.selectionEnd);
           this.content = resultText;
         });
     },
